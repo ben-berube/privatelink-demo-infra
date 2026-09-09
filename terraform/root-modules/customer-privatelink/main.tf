@@ -31,6 +31,13 @@ locals {
         { name = "ghe", value = "vpce-0aaaabbbb-cccc.vpce-svc-0aaaaaaaaaaaaaaaa.us-west-2.vpce.amazonaws.com" },
       ]
     }
+    # Meridianrobotics — ghes.internal.meridianrobotics.example -> endpoint regional DNS. Ticket t-a7e713e8.
+    meridianrobotics-example = {
+      zone_name = "meridianrobotics.example"
+      cname_records = [
+        { name = "ghes.internal", value = "vpce-0a76e648f-465e2d51.vpce-svc-0a1b2c3d4e5f60718.us-east-1.vpce.amazonaws.com" },
+      ]
+    }
   }
 }
 
