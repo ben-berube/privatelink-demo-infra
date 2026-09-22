@@ -13,6 +13,11 @@ locals {
       service_name        = "com.amazonaws.vpce.us-west-2.vpce-svc-0aaaaaaaaaaaaaaaa"
       private_dns_enabled = false
     }
+    # Meridianrobotics, team 424243. Ticket t-6e680351.
+    meridianrobotics = {
+      service_name        = "com.amazonaws.vpce.us-east-1.vpce-svc-0a1b2c3d4e5f60718"
+      private_dns_enabled = false
+    }
   }
 
   # Path B: private hosted zones + CNAMEs. Every customer needs this — an
